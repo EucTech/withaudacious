@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.hero {
+  background-color: var(--background);
+  background-image: url('/assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  color: var(--foreground);
+
+}
+
