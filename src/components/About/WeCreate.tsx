@@ -1,5 +1,6 @@
 import { inter, outfit } from "@/font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const WeCreate = () => {
@@ -42,9 +43,9 @@ const WeCreate = () => {
             features, mini-docus and more.
           </p>
         </div>
-        <h4 className="  w-fit text-[#fff] text-[16px] bg-[#141011] mt-3 md:mt-10 py-3 px-10 rounded-2xl font-normal ">
+        <Link href='https://forms.gle/qKvxhyr7JrhtfaVt6' className="  w-fit text-[#fff] text-[16px] bg-[#141011] mt-3 md:mt-10 py-3 px-10 rounded-2xl font-normal ">
           Share your story
-        </h4>
+        </Link>
       </div>
     </div>
   );

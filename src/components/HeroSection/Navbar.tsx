@@ -43,23 +43,23 @@ const Navbar = () => {
         className={`cursor-pointer text-[#838383] z-50 hidden md:flex items-center gap-4 text-[15px] font-medium ${dm_sans.className}`}
       >
         <Link href='aboutus'>About us</Link>
-        <Link href='#'>Creators stories</Link>
-        <Link href='#'>Support us </Link>
+        <Link href='https://www.youtube.com/channel/UCqUdk73arHvDYNuxI7yMZlQ'>Creators stories</Link>
+        <Link href='https://forms.gle/tm4ZpW7QS7XgNMmP9'>Support us </Link>
       </div>
 
       <div className={`${handleNav} z-50 block md:hidden text-[#838383]`}>
         <Link href='aboutus' onClick={() => setShowNav(false)}>
           About us
         </Link>
-        <Link href='#' onClick={() => setShowNav(false)}>
+        <Link href='https://www.youtube.com/channel/UCqUdk73arHvDYNuxI7yMZlQ' onClick={() => setShowNav(false)}>
           Creators stories
         </Link>
-        <Link href='#' onClick={() => setShowNav(false)}>
+        <Link href='https://forms.gle/tm4ZpW7QS7XgNMmP9' onClick={() => setShowNav(false)}>
           Support us
         </Link>
       </div>
 
-      <Link href="#">
+      <Link href="https://chat.whatsapp.com/KsaMSqpIECaAjZfEfBlAbl">
         <button
           className={` bg-[#DC1B79] text-white text-[16px] font-semibold py-2 px-3 rounded-lg ${outfit.className}`}
         >

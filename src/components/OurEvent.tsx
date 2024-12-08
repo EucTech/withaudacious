@@ -1,6 +1,9 @@
+"use client";
 import { inter, outfit } from "@/font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Flip, Slide,} from "react-awesome-reveal";
 
 const OurEvent = () => {
   return (
@@ -32,9 +35,12 @@ const OurEvent = () => {
           </p>
         </div>
 
-        <h4 className="  w-fit text-[#fff] text-[16px] bg-[#141011] mt-3 md:mt-10 py-3 px-10 rounded-2xl font-normal ">
+        <Slide direction="up" className="  w-fit text-[#fff] text-[16px] bg-[#141011] mt-3 md:mt-10 py-3 px-10 rounded-2xl font-normal ">
+        <Link href="https://chat.whatsapp.com/KsaMSqpIECaAjZfEfBlAbl" >
           Join our Community
-        </h4>
+        </Link>
+        </Slide>
+        
       </div>
 
       <div
@@ -54,7 +60,7 @@ const OurEvent = () => {
             like-minded creators, industry leaders, and influencers.
           </p>
           <button className="w-fit text-[#fff] text-[16px] bg-[#141011]  py-1 px-12 rounded-2xl font-light">
-            Register 
+            <Flip direction="horizontal">Register </Flip>
           </button>
         </div>
 

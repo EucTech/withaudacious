@@ -1,6 +1,9 @@
+"use client";
 import { outfit } from "@/font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { Roll } from "react-awesome-reveal";
 
 const FounderLetters = () => {
   return (
@@ -62,11 +65,13 @@ const FounderLetters = () => {
             day.
           </p>
         </div>
-        <div className="relative w-fit ">
-          <h4 className="  w-fit text-[#fff] text-[16px] bg-[#DC1B79] py-2 px-10 md:px-20 rounded-2xl font-normal ">
+        <div className="relative w-fit mt-6">
+          <Link href="https://forms.gle/tm4ZpW7QS7XgNMmP9" className="  w-fit text-[#fff] text-[16px] bg-[#DC1B79] py-3 px-10 md:px-20 rounded-2xl font-normal ">
             Sponspor us
-          </h4>
-          <Image src="/rw.svg" alt="right-arrow" width={500} height={500} className=" right-[-15px] top-0 w-10 absolute " />
+          </Link>
+          <Roll className=" right-[-15px] -top-2 w-10 absolute ">
+          <Image src="/rw.svg" alt="right-arrow" width={500} height={500} />
+          </Roll>
         </div>
       </div>
     </div>
