@@ -26,8 +26,8 @@ const WeFund = () => {
       </div>
 
       <Image
-        src="/fund.jpg"
-        alt="founder-image"
+        src="/room-setup.png"
+        alt="room setup"
         width={500}
         height={500}
         className="w-[30em] lg:w-[30%] h-full object-center rounded-xl "

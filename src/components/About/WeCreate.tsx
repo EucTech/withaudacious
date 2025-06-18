@@ -16,7 +16,7 @@ const WeCreate = () => {
     >
       <div className="  hidden  lg:flex relative ">
         <Image
-          src="/f1.png"
+          src="/w1.png"
           alt="founder-image"
           width={500}
           height={500}
@@ -24,7 +24,7 @@ const WeCreate = () => {
         />
 
         <Image
-          src="/f2.png"
+          src="/w2.png"
           alt="founder-image"
           width={500}
           height={500}

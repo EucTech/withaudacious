@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98773,98770");
+
+:root {
+  --font-sf: "SF Pro Display", sans-serif;
+  --font-eurostile: "EurostileExtendedBlack", sans-serif;
+  --font-clash: "ClashDisplay-Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "EurostileExtendedBlack";
+  src: url("/EurostileExtendedBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("/ClashDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +38,29 @@
 
 .hero {
   background-color: var(--background);
-  background-image: url('/assets/hero.jpg');
+  background-image: url("/assets/hero.jpg");
   background-size: cover;
   background-position: center;
   background-size: cover;
   color: var(--foreground);
-
 }
 
+.bg-grid {
+  background-image: url('/grid.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinSlow {
+  animation: spinSlow 10s linear infinite;
+}

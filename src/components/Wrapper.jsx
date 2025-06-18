@@ -18,7 +18,7 @@ const LayoutWrapper = ({ children }) => {
 
         ) : (
           <>
-          <div className="w-full z-50 bg-[#000]/40 backdrop-blur-3xl fixed">
+          <div className="w-full z-50 bg-[#000]/40  backdrop-blur-3xl fixed">
           <Navbar />
           </div>
           {children}

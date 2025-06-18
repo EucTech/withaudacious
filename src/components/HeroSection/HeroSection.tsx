@@ -1,45 +1,43 @@
-import { inter, outfit } from "@/font";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
-    <div className="sm:w-[90%] lg:w-[70%] xl:w-[60%] flex flex-col gap-10 items-center px-5 ">
-      <h1
-        className={`flex flex-wrap items-center justify-center gap-3 text-[#FFFFFF] tracking-wider text-[30px] sm:text-[50px] text-center font-bold ${outfit.className}`}
-      >
-        <span>Hi</span>
-        <TypeAnimation
-          sequence={[
-            // Same substring at the start will only be typed out once, initially
-            "Content Creator",
-            1500, // wait 1s before replacing "Mice" with "Hamsters"
-            "Creative",
-            1500,
-          ]}
-          wrapper="span"
-          speed={10}
-          // style={{ fontSize: "30px", display: "inline-block", color: "#DC1B79" }}
-          repeat={Infinity}
-          className="text-[#DC1B79] "
-        />
-      </h1>
+    <div className="flex lg:flex-row flex-col gap-10 justify-between items-center lg:pt-0 pt-16 px-5 md:px-16 lg:px-20 xl:px-28 2xl:px-40 font-sf z-40">
+      <div className="flex flex-col text-center lg:text-start gap-10 lg:w-[50%]">
+        <h1
+          className="font-[700] leading-[1] text-[#FFFFFF] text-[35px] sm:text-[40px] lg:text-[50px]  "
+        >
+          A Home for Creators building careers
+        </h1>
 
-      <p
-        className={` text-[16px] sm:text-[18px] font-normal text-center text-[#fff] ${inter.className}`}
-      >
-        Our goal is to build the most vibrant and connected creators and
-        creatives eco-system globally, empowering creators and creatives to
-        create, collaborate, and grow.
-      </p>
+        <p
+          className=" text-[16px] sm:text-[16px] font-normal text-[#fff] "
+        >
+          We believe creators deserve more than algorithms and likes.
+          That&apos;s why we built a dedicated space outside social media — a
+          true home for creators to connect, learn, grow, and launch impactful
+          work.
+        </p>
 
-      <Link
-        className={`w-[80%] sm:w-[40%] text-center tracking-wider bg-[#DC1B79] text-white text-[16px] font-semibold mt-8 md:mt-14 sm:mt-20 py-4 px-5 rounded-lg ${outfit.className}`}
-        href="https://chat.whatsapp.com/KsaMSqpIECaAjZfEfBlAbl"
-      >
-        Join our Community
-      </Link>
+        <Link
+          className="w-fit lg:mx-0 mx-auto bg-[#9D00FF] hover:bg-opacity-95 font-[700] text-[16px] rounded-[15px] text-[#FFFFFF] px-6 py-3"
+          href="https://chat.whatsapp.com/KsaMSqpIECaAjZfEfBlAbl"
+        >
+          Join our Community
+        </Link>
+      </div>
+
+      <Image
+        src="/hero-image.png"
+        alt="Hero Image"
+        width={400}
+        height={400}
+        quality={100}
+        className=" w-[100%] sm:w-[400px] lg:w-[300px] xl:w-[400px] h-auto"
+        priority
+      />
     </div>
   );
 };

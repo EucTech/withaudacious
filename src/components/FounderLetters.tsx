@@ -43,7 +43,7 @@ const FounderLetters = () => {
       />
 
       <div className="flex flex-col gap-5 order-1 md:items-start items-center md:order-2">
-        <h1 className="text-[#221919] text-[30px] font-bold ">
+        <h1 className={`text-[#221919] text-[30px] font-bold ${outfit.className}`}>
           Our founders letter
         </h1>
         <div className="text-[#3B3B3B] text-[15px] flex flex-col gap-2">
@@ -66,7 +66,7 @@ const FounderLetters = () => {
           </p>
         </div>
         <div className="relative w-fit mt-6">
-          <Link href="https://forms.gle/tm4ZpW7QS7XgNMmP9" className="  w-fit text-[#fff] text-[16px] bg-[#DC1B79] py-3 px-10 md:px-20 rounded-2xl font-normal ">
+          <Link href="https://forms.gle/tm4ZpW7QS7XgNMmP9" className="  w-fit text-[#fff] text-[16px] bg-[#000] py-3 px-10 md:px-20 rounded-2xl font-normal ">
             Sponspor us
           </Link>
           <Roll className=" right-[-15px] -top-2 w-10 absolute ">
